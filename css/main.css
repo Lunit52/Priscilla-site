@@ -50,10 +50,16 @@ body{
   letter-spacing: 3.12px;
   color: black;
 }
+#btn-container {
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
+}
 #btn {
   display:flex;
   font-size: 45px;
   color:#F8F8F8;
+  opacity: 50%;
   background:none;
   border:none;
   padding:0;
