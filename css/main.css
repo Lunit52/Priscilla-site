@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+#box {
+  background: #F8F8F8;
+  width: 350px;
+  height: 380px;
+  margin: 25vh auto 0 auto;
+  border-radius:6px;
+  padding-top: 14px;
+  text-align: center;
+}
+#box img {
+  display: block;
+  margin:0 auto;
+  width: 100px;
+}
+
+#box h1 {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 4.4px;
+}
+
+#box p {
+  margin-top: 14px;
+  font-size: 14px;
+  letter-spacing: 3.12px;
+}
+#box a {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  letter-spacing: 3.12px;
+  color: black;
+}
+#btn {
+  display:block;
+  font-size: 45px;
+  color:#F8F8F8;
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  float: bottom;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+}
+@media all and (max-width: 500px) {
+}
