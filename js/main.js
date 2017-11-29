@@ -1,19 +1,46 @@
-var btn = document.getElementById('btn'); //gets button
-var video = document.getElementById('vid');
-var onOff = 1;
-video.mute()
+// 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
 
-function toggle(){
-	if (onOff){ //if onOff returns true (1)
-		btn.style.color = "green";
-		video.unmute('vid');
-		onOff = 0;
-	}
-	else {
-		btn.style.color = "red";
-		video.mute('vid');
-		onOff = 1
-	}
-}
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-btn.onclick = toggle;
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '100%',
+          width: '100%',
+          videoId: 'K9sqwIu7LKs',
+          playerVars: { 'autoplay': 1, 'controls': 0, rel: 0},
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        player.mute();
+      }
+
+
+
+  var btn = document.getElementById('btn');
+  var onOff = 1;
+  function toggle(){
+    if (onOff){
+      player.unMute();
+      document.getElementById("volume-toggle").classList.add('fa-volume-up');
+      document.getElementById("volume-toggle").classList.remove('fa-volume-off');
+      onOff = 0;
+    }
+    else {
+      player.mute();
+      document.getElementById("volume-toggle").classList.add('fa-volume-off');
+      document.getElementById("volume-toggle").classList.remove('fa-volume-up');
+      onOff = 1
+    }
+  }
