@@ -50,21 +50,67 @@ body{
   letter-spacing: 3.12px;
   color: black;
 }
-#btn-container {
-  position: fixed;
-  bottom: 10px;
-  left: 30px;
+
+#close-btn {
+  background:none;
+  border:none;
+  padding:0;
 }
+
 #btn {
   display:flex;
   font-size: 45px;
   color:#F8F8F8;
-  opacity: 50%;
+  opacity: .4;
   background:none;
   border:none;
   padding:0;
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
   
 }
+
+#btn:hover {
+  opacity:.9;
+}
+
+#left {
+  display:flex;
+  font-size: 35px;
+  color:#F8F8F8;
+  opacity: .4;
+  background:none;
+  border:none;
+  padding:0;
+  position: fixed;
+  bottom: 16px;
+  left: 80px;
+
+}
+
+#left:hover {
+  opacity:.9;
+}
+
+#right {
+  display:flex;
+  font-size: 35px;
+  color:#F8F8F8;
+  opacity: .4;
+  background:none;
+  border:none;
+  padding:0;
+  position: fixed;
+  bottom: 16px;
+  left: 132px;
+
+}
+
+#right:hover {
+  opacity:.9;
+}
+
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
 }
