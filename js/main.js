@@ -47,6 +47,27 @@
       player.mute();
       document.getElementById("volume-toggle").classList.add('fa-volume-off');
       document.getElementById("volume-toggle").classList.remove('fa-volume-up');
-      onOff = 1
+      onOff = 1;
+    }
+  }
+
+  var closeBtn = document.getElementById('close-btn');
+  var openBtnVis = document.getElementById('open-btn-vis');
+  var openBtnNon = document.getElementById('open-btn-non')
+  var openClose = 1;
+   function closeOpen(){
+    if (openClose){
+      var a = document.getElementById("box");
+      var b = document.getElementById('open-btn-non');
+      a.id = "closed-box";
+      b.id = "open-btn-vis";
+      openClose = 0;
+    }
+    else {
+      var a = document.getElementById("closed-box");
+      var b = document.getElementById('open-btn-vis');
+      a.id = "box";
+      b.id = "open-btn-non";
+      openClose = 1;
     }
   }
