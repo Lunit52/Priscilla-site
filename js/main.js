@@ -12,11 +12,15 @@
         player = new YT.Player('player', {
           height: '100%',
           width: '100%',
-          playerVars: { 'autoplay': 1, 'controls': 0, rel: 0},
+          playerVars: { 
+            'autoplay': 1, 
+            'controls': 0, 
+            rel: 0 
+            listType:'playlist',
+            list: 'PL2_S-amORfd9_62VrG5yOnNVz5Bz72wAf'},
           events: {
             'onReady': onPlayerReady
-            listType:'playlist',
-            list: 'PL2_S-amORfd9_62VrG5yOnNVz5Bz72wAf'
+            
           }
         });
       }
