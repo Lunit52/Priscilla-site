@@ -12,10 +12,11 @@
         player = new YT.Player('player', {
           height: '100%',
           width: '100%',
-          videoId: 'K9sqwIu7LKs',
           playerVars: { 'autoplay': 1, 'controls': 0, rel: 0},
           events: {
             'onReady': onPlayerReady
+            listType:'playlist',
+            list: 'PL2_S-amORfd9_62VrG5yOnNVz5Bz72wAf'
           }
         });
       }
