@@ -15,7 +15,7 @@
           playerVars: { 
             'autoplay': 1, 
             'controls': 0, 
-            rel: 0 
+            rel: 0,
             listType:'playlist',
             list: 'PL2_S-amORfd9_62VrG5yOnNVz5Bz72wAf'
           },
