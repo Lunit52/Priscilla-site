@@ -109,6 +109,9 @@ body{
 
 #open-btn-vis:hover {
   opacity:.9;
+  -ms-transform: translate(0px,-1px);
+  -webkit-transform: translate(0px,-1px);
+  transform: translate(0px, -1px);
 }
 
 #btn {
@@ -128,6 +131,9 @@ body{
 
 #btn:hover {
   opacity:.9;
+  -ms-transform: translate(0px,-1px);
+  -webkit-transform: translate(0px,-1px);
+  transform: translate(0px, -1px);
 }
 
 #left {
@@ -147,6 +153,9 @@ body{
 
 #left:hover {
   opacity:.9;
+  -ms-transform: translate(0px,-1px);
+  -webkit-transform: translate(0px,-1px);
+  transform: translate(0px, -1px);
 }
 
 #right {
@@ -166,6 +175,9 @@ body{
 
 #right:hover {
   opacity:.9;
+  -ms-transform: translate(0px,-1px);
+  -webkit-transform: translate(0px,-1px);
+  transform: translate(0px, -1px);
 }
 
 @media (min-aspect-ratio: 16/9) {
