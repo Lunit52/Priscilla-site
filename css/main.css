@@ -73,7 +73,9 @@ body{
 /*close and open box */
 
 #close-btn:hover {
-  animation-play-state: paused;
+  animation-name: none;
+  opacity: .45;
+
 }
 
 #closed-box {
@@ -104,7 +106,7 @@ body{
   padding:0;
   position: fixed;
   bottom: 11px;
-  left: 180px;
+  left: 185px;
 }
 
 #open-btn-vis:hover {
