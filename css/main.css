@@ -57,17 +57,54 @@ body{
 }
 
 #close-btn {
+  font-size: 24px;
   position:relative;
   background:none;
   border:none;
   padding:0;
-  margin-top: 16%;
+  margin-top: 10%;
   cursor: pointer;
   animation-name: fade;
   animation-duration:4s;
   animation-iteration-count: infinite;
 
 }
+
+/*close and open box */
+
+#close-btn:hover {
+  animation-play-state: paused;
+}
+
+#closed-box {
+  display:none;
+}
+
+#open-btn-non{ 
+  
+  display:none;
+  font-size: 35px;
+  color:#F8F8F8;
+  opacity: .4;
+  background:none;
+  border:none;
+  padding:0;
+  position: fixed;
+  bottom: 11px;
+  left: 180px; }
+
+#open-btn-vis {
+  display: visible;
+  cursor: pointer;
+  font-size: 35px;
+  color:#F8F8F8;
+  opacity: .4;
+  background:none;
+  border:none;
+  padding:0;
+  position: fixed;
+  bottom: 11px;
+  left: 180px;}
 
 #btn {
   display:flex;
@@ -80,6 +117,7 @@ body{
   position: fixed;
   bottom: 10px;
   left: 30px;
+  cursor: pointer;
   
 }
 
@@ -98,6 +136,7 @@ body{
   position: fixed;
   bottom: 16px;
   left: 80px;
+  cursor: pointer;
 
 }
 
@@ -116,6 +155,7 @@ body{
   position: fixed;
   bottom: 16px;
   left: 132px;
+  cursor: pointer;
 
 }
 
