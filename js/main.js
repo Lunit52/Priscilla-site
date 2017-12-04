@@ -71,3 +71,11 @@
       openClose = 1;
     }
   }
+
+  function forward(){
+    player.nextVideo()
+  }
+
+  function back(){
+    player.previousVideo()
+  }
