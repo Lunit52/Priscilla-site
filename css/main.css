@@ -104,7 +104,12 @@ body{
   padding:0;
   position: fixed;
   bottom: 11px;
-  left: 180px;}
+  left: 180px;
+}
+
+#open-btn-vis:hover {
+  opacity:.9;
+}
 
 #btn {
   display:flex;
