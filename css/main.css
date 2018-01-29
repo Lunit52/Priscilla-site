@@ -188,7 +188,131 @@ body{
 @media (max-aspect-ratio: 16/9) {
   .video-foreground { width: 300%; left: -100%; }
 }
-@media all and (max-width: 600px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+	#box{
+		width:70%;
+		height:740px;
+	}
+
+	#box img {
+  		display: block;
+  		margin:20px auto;
+  		width: 200px;
+}
+
+	#box h1 {
+        font-weight: normal;
+        font-size: 50px;
+        letter-spacing: 4.4px;
+}
+
+	#box p {
+	    margin-top: 14px;
+	    font-size: 34px;
+	    letter-spacing: 3.12px;
+}
+	#box a {
+	    display: block;
+	    margin-top: 14px;
+	    font-size: 34px;
+	    letter-spacing: 3.12px;
+	    color: black;
+}
+	#close-btn {
+  font-size: 54px;
+  position:relative;
+  background:none;
+  border:none;
+  padding:0;
+  margin-top: 0%;
+  cursor: pointer;
+  animation-name: fade;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+
+}
+#btn {
+  display:flex;
+  font-size: 100px;
+  color:#F8F8F8;
+  opacity: .4;
+  background:none;
+  border:none;
+  padding:0;
+  position: ;
+  bottom: 10px;
+  left: 30px;
+  cursor: pointer;
+  
+}
+
+#btn:hover {
+  opacity:.9;
+  -ms-transform: translate(0px,-1px);
+  -webkit-transform: translate(0px,-1px);
+  transform: translate(0px, -1px);
+}
+
+#left {
+  display:flex;
+  font-size: 85px;
+  color:#F8F8F8;
+  opacity: .4;
+  background:none;
+  border:none;
+  padding:0 30px;
+  position: ;
+  bottom: 16px;
+  left: 80px;
+  cursor: pointer;
+
+}
+
+#left:hover {
+  opacity:.9;
+  -ms-transform: translate(0px,-1px);
+  -webkit-transform: translate(0px,-1px);
+  transform: translate(0px, -1px);
+}
+
+#right {
+  display:flex;
+  font-size: 85px;
+  color:#F8F8F8;
+  opacity: .4;
+  background:none;
+  border:none;
+  padding:0 30px;
+  position: ;
+  bottom: 16px;
+  left: 180px;
+  cursor: pointer;
+
+}
+
+#right:hover {
+  opacity:.9;
+  -ms-transform: translate(0px,-1px);
+  -webkit-transform: translate(0px,-1px);
+  transform: translate(0px, -1px);
+}
+
+#open-btn-vis {
+  display: visible;
+  cursor: pointer;
+  font-size: 85px;
+  color:#F8F8F8;
+  opacity: .4;
+  background:none;
+  border:none;
+  padding:0;
+  position: fixed;
+  bottom: 6px;
+  left: 320px;
+}
+	
+
 }
 @media all and (max-width: 500px) {
 }
